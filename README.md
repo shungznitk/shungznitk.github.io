@@ -1,10 +1,11 @@
-# ABOUT
-,,,
+## About
 This webpage is all about my profile/portfolio
 
-# TOOLS and TECHNOLOGY USED
+
+## Tools and Technology used
+## Language
 ,,,
-# LANGUAGE
+language used
 ,,,
 html, css, javascript, node.js
 
