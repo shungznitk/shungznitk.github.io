@@ -1,13 +1,104 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-us">
 <head>
- <title>
-  My Profile
- </title>
-<head>
+    <title>My Profile</title> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta name="Keyword"s content="HTML,CSS,JavaScript">
+    <meta name="Description" content="A well and organised Personal Profile">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet"> 
+    <link rel = "stylesheet" type="text/css" href="style.css"/> 
+</head>
+<body> 
+           <!--MENU-->
+    <div class="navbar">
+          <a href="#aboutme"> ABOUT ME</a>
+          <a href="#">EDUCATION </a>
+          <a href="#">PROJECT</a>
+          <a href="#tech">PROFESSIONAL SKILLS</a>
+          <a href="#">INTERESTED</a>
+     </nav>
+    </div>
 
-<body>
-Hello world!
+    <!--hover-->
+    <div class="box-1">
+        <div class="btn btn-one">
+          <span>ABOUT ME</span>
+        </div>
+      </div>
+
+    <!---ABOUT ME-->
+    <div id="aboutme" class="bder">
+        <h1 style="color:gray;">ABOUT ME</h1>
+        <h2>VASHUNG MUILUNG</h2>
+        <p>
+            M.Tech, Pursuing
+        </p>
+        <span id="down">&#8595</span>
+    </div>
+
+<!--- EDUCATION -->
+    <div class="bder, edu">
+     <h1 style="color:gray">EDUCATION</h1>
+     <ul>
+         <li><b>M.Tech in Computer Science Engineering-Information Security</b></li>
+         <li><a href="http://www.nitk.ac.in">National Institute of Technology, Surathkal, Karnataka </a></li>
+    </ul>
+    <ul>
+         <li><b>B.Tech in Computer Science and Engineering</b>/li>
+         <li> <a href="https://www.nitmanipur.ac.in/">National Institute of Technology Manipur</a>, May 2019/li>
+         <li>CPI: 6.5</li>
+     </ul>
+    </div>
+
+    <!-- PROJECT-->
+    <div class="bder, pject">
+        <h1 style="color: gray;">PROJECT</h1>
+        <ul>
+            <li><b>B.Tech Project</b></li>
+            <li>Object detection and instance segmentation using Mask-RCNN</li>
+        </ul>
+        <ul>  
+            <li><b>Android Project</b></li>
+            <li>Delivery Application</li>
+        </ul>
+    </div>
+    
+
+    <!---TECHNICAL SKILLS-->
+    <div class="bder" id="tech">
+        <h1 style="color: gray;">TECHNICAL SKILLS</h1>
+      <ul>
+          <li><h3>C++</h3></li>
+          <li><h3>JAVA</h3></li>
+          <li> <h3>Data Structure</h3></li>
+          <li> <h3>Algorithm</h3></li>
+          <li><h3>HTML</h3></li>
+          <li><h3>CSS</h3></li>
+          <li><h3>JavaScript</h3></li>
+          <li><h3>Mysql</h3></li>
+          <li><h3>Adobe Photoshop</h3></li>
+          <li><h3>Illustrator</h3></li>
+          <li><h3>InDeign</h3></li>
+      </ul>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      window.onbeforeunload = function(){
+          window.scrollTo(0,0);
+      }
+      $(document).ready( function () {
+	   $('#down').on('click',function () {
+		$("html").scrollTop(0);
+		console.log("Clicked!");
+		 $('html, body').animate({
+        scrollTop: $(".edu").offset().top
+    }, 1000);
+	});
+});
+    </script>
 </body>
-
 </html>
