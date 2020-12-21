@@ -1,0 +1,186 @@
+body{
+    background-color:paleturquoise;
+    font-family: 'Roboto Mono','monospace';
+    align-items: center;
+}
+a{text-decoration: none;}
+
+ul{
+   text-decoration: none;
+}
+
+
+li{list-style: none;
+}
+
+/*       Menu       */
+.navbar{
+  margin:auto;
+  overflow: hidden;
+}
+.navbar a{
+  float:none;
+  position: relative;
+  top: 50%;
+  left: 20%;
+  transform: translate(-50%,-50%);
+  color: #160606;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover{
+  background-color: rgb(13, 175, 62);
+  color:rgb(255, 249, 249);
+}
+.navbar a.active{
+  background-color: #98f79c;
+  color: white;
+}
+
+.bder{
+  text-align: center;
+}
+
+
+/*
+About me
+*/
+
+#aboutme{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  margin-bottom: 30px;
+}
+#down{
+  position: absolute;
+  top: 85vh;
+  padding: 20px;
+  font-size: 2.5em;
+}
+#down:hover{
+  cursor: pointer;
+  background-color: #eee;
+  opacity: 0.8;
+}
+
+/* 
+
+Education
+
+*/
+.edu{
+  justify-content: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  margin-bottom: 30px;
+}
+
+
+
+/*
+ PROJECT
+
+ */
+
+ .pject{
+   text-align: center;
+  justify-content: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  margin-bottom: 30px;
+ }
+
+
+ .tech{
+  justify-content: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  margin-bottom: 30px;
+ }
+
+ /*---- HOVER -----
+ */
+div[class*=box] {
+    height: 33.33%;
+    width: 100%; 
+    display: flex;
+    color: black;
+    justify-content: center;
+    align-items: center;
+  }
+  .btn-one .btn-two{background-color:paleturquoise;}
+  .btn {
+    line-height: 50px;
+    height: 50px;
+    text-align: center;
+    width: 250px;
+    cursor: pointer;
+  }
+  .btn-one {
+    color: #FFF;
+    transition: all 0.3s;
+    position: relative;
+  }
+ 
+  .btn-one span {
+    transition: all 0.3s;
+  }
+  .btn-one::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0; 
+    transition: all 0.3s;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-top-color: rgba(255,255,255,0.5);
+    border-bottom-color: rgba(255,255,255,0.5);
+    transform: scale(0.1, 1);
+  }
+  .btn-one:hover span {
+    letter-spacing: 2px;
+  }
+  .btn-one:hover::before {
+    opacity: 1; 
+    transform: scale(1, 1); 
+  }
+  .btn-one::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: all 0.3s;
+    background-color: rgba(255,255,255,0.1);
+  }
+  .btn-one:hover::after {
+    opacity: 0; 
+    transform: scale(0.1, 1);
+  }
